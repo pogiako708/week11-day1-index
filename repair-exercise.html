@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lakbay Batangas Tours - Training Demo</title>
+</head>
+<body>
+  <header>
+    <h1>Lakbay Batangas Tours</h1>
+    <p>A fictional company for a classroom project.</p>
+    <nav aria-label="Main">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#packages">Tour packages</a>
+      <a href="#why-us">Why choose us</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>Explore our sample Batangas day-trip ideas.</p>
+      <a href="#packages">View the sample tour packages</a>
+    </section>
+    <section id="about">
+      <h2>About our tours</h2>
+      <p>We help visitors plan a Batangas day trip.</p>
+      <figure>
+        <img src="assets/taal-lake.jpg"
+             alt="Taal Lake at sunset"
+             width="320" height="240">
+        <figcaption>Taal Lake, Batangas.</figcaption>
+      </figure>
+      <p>Photo: Talynhaga,
+        <a href="https://commons.wikimedia.org/wiki/File:Taal_Lake.jpg">
+          Taal Lake</a>,
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/">
+          CC BY-SA 4.0</a>. Original image, displayed smaller.</p>
+    </section>
+    <section id="packages">
+      <h2>Tour packages</h2>
+      <article>
+        <h3>Heritage Walk</h3>
+        <p>A sample half-day walking tour with a guide.</p>
+        <a href="#contact">Ask about Heritage Walk</a>
+      </article>
+      <article>
+        <h3>Lake View</h3>
+        <p>A sample day trip to view the lake from the mainland.</p>
+        <a href="#contact">Ask about Lake View</a>
+      </article>
+      <table>
+        <caption>Sample tour durations</caption>
+        <tr>
+          <th scope="col">Tour</th>
+          <th scope="col">Duration</th>
+        </tr>
+        <tr><td>Heritage Walk</td><td>Half day</td></tr>
+        <tr><td>Lake View</td><td>One day</td></tr>
+      </table>
+      <h3>What to bring</h3>
+      <ul>
+        <li>Walking shoes</li>
+        <li>Drinking water</li>
+        <li>Hat</li>
+      </ul>
+      <h3>How to enquire</h3>
+      <ol>
+        <li>Choose a tour.</li>
+        <li>Review the details.</li>
+        <li>Complete the demo enquiry.</li>
+      </ol>
+    </section>
+    <section id="why-us">
+      <h2>Why choose us</h2>
+      <p>Our sample trips include clear meeting instructions.</p>
+      <p><strong>Bring drinking water.</strong></p>
+      <p>Please arrive <em>before</em> the meeting time.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Local training demo. Use fictional details only.</p>
+      <p>This form does not send an enquiry or make a booking.</p>
+      <form action="#contact" method="get">
+        <p>
+          <label for="visitor-name">Name (required)</label>
+          <input id="visitor-name" name="visitor_name"
+                 type="text" required>
+        </p>
+        <p>
+          <label for="email">Email (required)</label>
+          <input id="email" name="email" type="email" required>
+        </p>
+        <p>
+          <label for="tour">Tour (required)</label>
+          <select id="tour" name="tour" required>
+            <option value="">Choose a tour</option>
+            <option value="heritage">Heritage Walk</option>
+            <option value="lake">Lake View</option>
+          </select>
+        </p>
+        <p>
+          <label for="message">Message (optional)</label>
+          <textarea id="message" name="message"
+                    rows="3" cols="30"></textarea>
+        </p>
+       <!-- <fieldset>-->
+         <!-- <legend>Reply preference</legend>-->
+          <label>
+            <input type="radio" name="reply"
+                   value="email" checked> Email
+          </label>
+          <label>
+            <input type="radio" name="reply"
+                   value="none"> No reply needed
+          </label>
+        <!-- </fieldset>-->
+        <button type="submit">Check demo form</button>
+      </form>
+    </section>
+  </main>
+  <footer><p>Training website only. No real booking service.</p></footer>
+</body>
+</html>
